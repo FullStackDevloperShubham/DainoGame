@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: red;
+  overflow: hidden;
+}
+.gameContainer {
+  color: red;
+  background-image: url(GameNewBackground.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  width: 100%;
+  height: 100vh;
+}
+
+.dino {
+  background-image: url(Dianosore-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 163px;
+  height: 144px;
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  /* border: 1px solid red; */
+}
+
+.obsticle {
+  width: 100px;
+  height: 100px;
+  background-image: url(another_dragon-removebg-preview.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 80vw;
+  /* border: 1px solid red; */
+  /* animation code */
+}
+
+.animatedDino {
+  animation: dino 0.6s linear;
+}
+@keyframes dino {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 444px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+/* game over visiblity  */
+
+.gameOver {
+  position: relative;
+  top: 63px;
+  color: green;
+  font-family: sans-serif;
+  font-size: 53px;
+  text-align: center;
+  visibility: hidden;
+}
+
+/* abstical animation */
+.obsticleAni {
+  animation: obsticleAni 5s linear infinite;
+}
+@keyframes obsticleAni {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -10vw;
+  }
+}
+/* score count css */
+#scoreCont {
+  color: yellow;
+  font-size: xx-large;
+  font-family: cursive;
+}
